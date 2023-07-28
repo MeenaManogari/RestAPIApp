@@ -1,0 +1,19 @@
+.head_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(203, 211, 91), rgb(126, 184, 176));
+  color: white;
+  padding: 0 32px;
+}
+.head_name a {
+  text-decoration: none;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.head_name nav {
+  display: flex;
+  gap: 50px;
+}
