@@ -1,0 +1,19 @@
+.goal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: cornflowerblue;
+  color: white;
+}
+.goal button {
+  width: 50px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.goal_list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}

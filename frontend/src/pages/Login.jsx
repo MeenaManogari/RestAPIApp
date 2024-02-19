@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
+import "./page.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -53,15 +54,15 @@ const Login = () => {
   }
 
   return (
-    <>
-      <div className="login_head">
-        <h2>
-          <FaSignInAlt />
-          Login
-        </h2>
-        <p>Please Login</p>
-      </div>
+    <div className="login_main">
       <div className="form">
+        <div className="login_head">
+          <h2>
+            <FaSignInAlt />
+            Login
+          </h2>
+        </div>
+
         <form onSubmit={onSubmit}>
           <div className="form_group">
             <input
@@ -89,7 +90,7 @@ const Login = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

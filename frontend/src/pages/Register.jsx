@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { register, reset } from "../features/auth/authSlice";
 import { FaUser } from "react-icons/fa";
+import "./page.css";
+
 const Register = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -58,15 +60,15 @@ const Register = () => {
     return <p>...Loading</p>;
   }
   return (
-    <>
-      <div className="reg_head">
-        <h2>
-          <FaUser />
-          Register
-        </h2>
-        <p>Please create an account</p>
-      </div>
+    <div className="reg_main">
       <div className="form">
+        <div className="reg_head">
+          <h2>
+            <FaUser />
+            Register
+          </h2>
+        </div>
+
         <form onSubmit={onSubmit}>
           <div className="form_group">
             <input
@@ -113,7 +115,7 @@ const Register = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

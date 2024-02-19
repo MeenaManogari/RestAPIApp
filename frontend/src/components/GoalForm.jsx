@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createGoal } from "../features/goals/goalSlice";
+import "./GoalForm.css";
 
 const GoalForm = () => {
   const [text, setText] = useState("");
@@ -17,16 +18,16 @@ const GoalForm = () => {
   return (
     <>
       <div className="form_head">
-        <p>GoalForm</p>
+        <h3>GoalForm</h3>
         <form onSubmit={onSubmit}>
           <div className="form_group">
-            <label htmlFor="text">Goal</label>
             <input
               type="text"
               name="text"
               id="text"
               value={text}
               onChange={(e) => setText(e.target.value)}
+              placeholder="Enter your Goal"
             />
           </div>
           <div className="form_group">

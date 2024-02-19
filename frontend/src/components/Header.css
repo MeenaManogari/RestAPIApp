@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgb(203, 211, 91), rgb(126, 184, 176));
-  color: white;
-  padding: 0 32px;
+  /* background: linear-gradient(rgb(203, 211, 91), rgb(126, 184, 176)); */
+
+  padding: 10px 32px;
+  background-color: cornflowerblue;
 }
 .head_name a {
   text-decoration: none;
@@ -12,8 +13,18 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: white;
 }
 .head_name nav {
   display: flex;
   gap: 50px;
+}
+.head_name nav button {
+  border: none;
+  background-color: white;
+  color: cornflowerblue;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
 }

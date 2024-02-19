@@ -38,7 +38,7 @@ const Dashboard = () => {
   }
 
   return (
-    <>
+    <div className="dash_main">
       <div className="dash_heading">
         <h1>Welcome {user && user.name}</h1>
         <h4>Goals Dashboard</h4>
@@ -56,7 +56,7 @@ const Dashboard = () => {
           <h3>You have not set any goals</h3>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
